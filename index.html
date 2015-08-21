@@ -5,7 +5,10 @@
 		<link href="styles.css" type="text/css" rel="stylesheet" >
 	</head>
 	<body ng-controller="mainController">
-		
+		<form>
+			<input ng-model="searchText"></input>
+			<button ng-click="getUser()"></button>
+		</form>
 	
 	
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.13/angular.js"></script>
