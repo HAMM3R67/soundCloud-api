@@ -14,6 +14,7 @@
 				<div class="col-md-1">
 					<img src="http://i.ytimg.com/vi/L5z2-Mx9TNE/hqdefault.jpg" ng-click="play(song.permalink_url)" ng-if="!song.artwork_url">
 					<img ng-src="{{song.artwork_url}}" ng-click="play(song.permalink_url)" ng-if="song.artwork_url">
+				<div ng-bind-html="player_html"></div>
 				</div>
 			</div>
 		</div>
@@ -23,5 +24,6 @@
 	<script src="app.js"></script>
 	<script src="mainController.js"></script>
 	<script src="soundService.js"></script>
+	<script src="http://connect.soundcloud.com/sdk.js"></script>
 	</body>
 </html>
