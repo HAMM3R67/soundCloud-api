@@ -6,4 +6,5 @@ app.controller('mainController', function($scope, soundService){
 			console.log(data.data)
 		})
 	}
+	$scope.getUser()
 })
