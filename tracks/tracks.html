@@ -1,16 +1,4 @@
-<form ng-submit="getUser()">
-			<input ng-model="searchText"></input>
-			<button type="submit"></button>
-		</form>
+<div>
+	{{song.user.username}}
+</div>
 		
-		<div ng-bind-html="player_html"></div>
-		
-		<div class="row">
-			<div ng-repeat="song in userData">
-				<div class="col-md-1">
-					<img src="http://i.ytimg.com/vi/L5z2-Mx9TNE/hqdefault.jpg" ng-click="play(song.permalink_url)" ng-if="!song.artwork_url">
-					<img ng-src="{{song.artwork_url}}" ng-click="play(song.permalink_url)" ng-if="song.artwork_url">
-				{{song.user.username}}
-				</div>
-			</div>
-		</div>
